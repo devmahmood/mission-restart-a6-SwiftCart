@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <div class="navbar bg-base-100 w-8/12 mx-auto">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabindex="-1"
+            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+          >
+            <li><a>Home</a></li>
+            <li><a>Products</a></li>
+            <li><a>About</a></li>
+            <li><a>Contacts</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl text-blue-700">SwiftCart</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1">
+          <li><a>Home</a></li>
+          <li><a>Products</a></li>
+          <li><a>About</a></li>
+          <li><a>Contacts</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <a><i class="fa-solid fa-cart-arrow-down"></i></a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div
+      class="hero min-h-96"
+      style="
+        background-image: url(images/banner-image.png);
+      " 
+    >
+      <div class="hero-overlay"></div>
+      <div class="hero-content text-neutral-content text-left w-8/12 mx-auto">
+        <div class="">
+          <h1 class="mb-5 text-5xl font-bold">Best Collection For You</h1>
+          <p class="mb-5">
+           Discover the best products at unbeatable prices. Shop now and experience the ultimate convenience of online shopping with SwiftCart!
+          </p>
+          <button class="btn btn-primary">Shop Now</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
