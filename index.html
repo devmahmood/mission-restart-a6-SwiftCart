@@ -17,10 +17,19 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
   <body>
     <!-- Navbar Section -->
-    <div class="navbar bg-base-100 w-8/12 mx-auto">
+    <div class="navbar bg-base-100 max-w-6xl mx-auto px-4">
       <div class="navbar-start">
         <div class="dropdown">
           <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -66,19 +75,19 @@
 
     <!-- Hero Section -->
     <div
-      class="hero min-h-96"
+      class="hero min-h-[60vh] bg-cover bg-center"
       style="background-image: url(images/banner-image.png)"
     >
-      <div class="hero-overlay"></div>
-      <div class="hero-content text-neutral-content text-left w-8/12 mx-auto">
-        <div class="">
-          <h1 class="mb-5 text-5xl font-bold">Best Collection For You</h1>
-          <p class="mb-5">
+      <div class="hero-overlay bg-black/40"></div>
+      <div class="hero-content text-neutral-content text-left w-full max-w-4xl mx-auto px-4 py-16">
+        <div>
+          <h1 class="mb-5 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold">Best Collection For You</h1>
+          <p class="mb-6 text-sm sm:text-base lg:text-lg">
             Discover the best products at unbeatable prices. Shop now and
             experience the ultimate convenience of online shopping with
             SwiftCart!
           </p>
-          <button class="btn btn-primary">Shop Now</button>
+          <button class="btn btn-primary btn-lg">Shop Now</button>
         </div>
       </div>
     </div>
@@ -89,69 +98,52 @@
       <p class="text-center mb-16">
         We provide the best shopping experience with top-notch services.
       </p>
-      <div class="w-full mx-auto flex gap-4">
-        <div class="w-8/12 mx-auto">
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="relative">
-              <div
-                class="p-1 w-16 h-16 border-4 border-white rounded-lg bg-slate-100 shadow-sm flex items-center justify-center absolute -top-8 left-6 z-10"
-              >
-                <i class="fa-regular fa-truck text-3xl text-blue-800"></i>
-              </div>
-              <div class="card bg-base-100 shadow-xl pt-6">
-                <div class="card-body">
-                  <h2 class="card-title">Fast Delivery</h2>
-                  <p>
-                    Get your orders delivered to your doorstep in record time.
-                  </p>
-                </div>
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="relative">
+            <div class="p-1 w-16 h-16 border-4 border-white rounded-lg bg-slate-100 shadow-sm flex items-center justify-center absolute -top-8 left-1/2 -translate-x-1/2 sm:left-6 sm:translate-x-0 z-10">
+              <i class="fa-regular fa-truck text-3xl text-blue-800"></i>
+            </div>
+            <div class="card bg-base-100 shadow-xl pt-6 w-full">
+              <div class="card-body">
+                <h2 class="card-title">Fast Delivery</h2>
+                <p>Get your orders delivered to your doorstep in record time.</p>
               </div>
             </div>
-            <div class="relative">
-              <div
-                class="p-1 w-16 h-16 border-4 border-white rounded-lg bg-slate-100 shadow-sm flex items-center justify-center absolute -top-8 left-6 z-10"
-              >
-                <i class="fa-solid fa-lock text-3xl text-blue-800"></i>
-              </div>
-              <div class="card bg-base-100 shadow-xl pt-6">
-                <div class="card-body">
-                  <h2 class="card-title">Secure Payment</h2>
-                  <p>
-                    We use secure payment gateways to protect your transactions
-                    and data.
-                  </p>
-                </div>
+          </div>
+
+          <div class="relative">
+            <div class="p-1 w-16 h-16 border-4 border-white rounded-lg bg-slate-100 shadow-sm flex items-center justify-center absolute -top-8 left-1/2 -translate-x-1/2 sm:left-6 sm:translate-x-0 z-10">
+              <i class="fa-solid fa-lock text-3xl text-blue-800"></i>
+            </div>
+            <div class="card bg-base-100 shadow-xl pt-6 w-full">
+              <div class="card-body">
+                <h2 class="card-title">Secure Payment</h2>
+                <p>We use secure payment gateways to protect your transactions and data.</p>
               </div>
             </div>
-            <div class="relative">
-              <div
-                class="p-1 w-16 h-16 border-4 border-white rounded-lg bg-slate-100 shadow-sm flex items-center justify-center absolute -top-8 left-6 z-10"
-              >
-                <i class="fa-solid fa-tags text-3xl text-blue-800"></i>
-              </div>
-              <div class="card bg-base-100 shadow-xl pt-6">
-                <div class="card-body">
-                  <h2 class="card-title">Best Prices</h2>
-                  <p>
-                    Find great deals and competitive prices across our entire
-                    catalog.
-                  </p>
-                </div>
+          </div>
+
+          <div class="relative">
+            <div class="p-1 w-16 h-16 border-4 border-white rounded-lg bg-slate-100 shadow-sm flex items-center justify-center absolute -top-8 left-1/2 -translate-x-1/2 sm:left-6 sm:translate-x-0 z-10">
+              <i class="fa-solid fa-tags text-3xl text-blue-800"></i>
+            </div>
+            <div class="card bg-base-100 shadow-xl pt-6 w-full">
+              <div class="card-body">
+                <h2 class="card-title">Best Prices</h2>
+                <p>Find great deals and competitive prices across our entire catalog.</p>
               </div>
             </div>
-            <div class="relative">
-              <div
-                class="p-1 w-16 h-16 border-4 border-white rounded-lg bg-slate-100 shadow-sm flex items-center justify-center absolute -top-8 left-6 z-10"
-              >
-                <i class="fa-solid fa-headset text-3xl text-blue-800"></i>
-              </div>
-              <div class="card bg-base-100 shadow-xl pt-6">
-                <div class="card-body">
-                  <h2 class="card-title">24/7 Support</h2>
-                  <p>
-                    Our support team is available around the clock to help you.
-                  </p>
-                </div>
+          </div>
+
+          <div class="relative">
+            <div class="p-1 w-16 h-16 border-4 border-white rounded-lg bg-slate-100 shadow-sm flex items-center justify-center absolute -top-8 left-1/2 -translate-x-1/2 sm:left-6 sm:translate-x-0 z-10">
+              <i class="fa-solid fa-headset text-3xl text-blue-800"></i>
+            </div>
+            <div class="card bg-base-100 shadow-xl pt-6 w-full">
+              <div class="card-body">
+                <h2 class="card-title">24/7 Support</h2>
+                <p>Our support team is available around the clock to help you.</p>
               </div>
             </div>
           </div>
@@ -160,10 +152,8 @@
     </div>
 
     <!-- Trending / Top Rated Section -->
-    <div class=" w-8/12 mx-auto min-h-96 mt-10">
-      <div
-        class="bg-white rounded-lg p-3 shadow-sm border border-gray-200 w-[280px] h-[380px] flex flex-col"
-      >
+    <div class="max-w-6xl mx-auto mt-10 px-4">
+      <div class="bg-white rounded-lg p-3 shadow-sm border border-gray-200 w-full sm:w-[280px] md:w-[320px] h-[380px] flex flex-col mx-auto">
         <div
           class="bg-gray-50 rounded-t-lg h-[180px] flex items-center justify-center p-4 mb-3 relative overflow-hidden"
         >
@@ -214,6 +204,57 @@
       </div>
     </div>
 
-    
+    <!-- Newsletter Section -->
+    <footer class="footer p-10 bg-gray-900 text-gray-400 mt-10 flex flex-col lg:flex-row gap-8 justify-between">
+      <aside>
+        <h2 class="text-2xl font-bold text-indigo-500 mb-2">SwiftCart</h2>
+        <p class="max-w-xs text-sm leading-relaxed">
+          Your one-stop shop for all your fashion and lifestyle needs. Quality
+          products, fast delivery, and excellent support.
+        </p>
+      </aside>
+
+      <nav>
+        <h6 class="footer-title text-gray-500 opacity-100">Quick Links</h6>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Products</a>
+        <a class="link link-hover">About</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+
+      <nav>
+        <h6 class="footer-title text-gray-500 opacity-100">Support</h6>
+        <a class="link link-hover">FAQ</a>
+        <a class="link link-hover">Shipping</a>
+        <a class="link link-hover">Returns</a>
+        <a class="link link-hover">Privacy Policy</a>
+      </nav>
+
+      <form class="sm:flex flex-col">
+        <h6 class="footer-title text-gray-500 opacity-100">
+          Subscribe to our newsletter
+        </h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text text-gray-400 text-sm"
+              >The latest news, articles, and resources, sent to your inbox
+              weekly.</span
+            >
+          </label>
+          <div class="flex gap-3 mt-2">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="input input-bordered bg-white text-gray-900 w-full"
+            />
+            <button
+              class="btn bg-indigo-600 hover:bg-indigo-700 text-white border-none"
+            >
+              Subscribe
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
   </body>
 </html>
