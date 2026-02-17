@@ -75,21 +75,80 @@
     </div>
 
     <!-- Products Section -->
-     <div>
-        <h2 class="text-3xl font-bold text-center mb-8 mt-6">Our Products</h2>
-        <div id="category-container" class="flex justify-center items-center gap-4">
-            <button class="btn btn-outline rounded-full px-3">All</button>
-            <button class="btn btn-outline rounded-full px-3">Electronics</button>
-            <button class="btn btn-outline rounded-full px-3">Jewelry</button>
-            <button class="btn btn-outline rounded-full px-3">Men's Clothing</button>
-            <button class="btn btn-outline rounded-full px-3">Women's Clothing</button>
-        </div>
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8 mt-6">Our Products</h2>
+      <div
+        id="category-container"
+        class="flex justify-center items-center gap-4"
+      >
+        <button class="btn btn-outline rounded-full px-3">All</button>
+        <button class="btn btn-outline rounded-full px-3">Electronics</button>
+        <button class="btn btn-outline rounded-full px-3">Jewelry</button>
+        <button class="btn btn-outline rounded-full px-3">
+          Men's Clothing
+        </button>
+        <button class="btn btn-outline rounded-full px-3">
+          Women's Clothing
+        </button>
+      </div>
 
-        <div class="cards-container">
+      <div class="cards-container"></div>
+    </div>
 
-        </div>
-     </div>
+    <!-- Newsletter Section -->
+    <footer
+      class="footer p-10 bg-gray-900 text-gray-400 mt-10 flex flex-col lg:flex-row gap-8 justify-between"
+    >
+      <aside>
+        <h2 class="text-2xl font-bold text-indigo-500 mb-2">SwiftCart</h2>
+        <p class="max-w-xs text-sm leading-relaxed">
+          Your one-stop shop for all your fashion and lifestyle needs. Quality
+          products, fast delivery, and excellent support.
+        </p>
+      </aside>
 
-     <script src="script.js"></script>
+      <nav>
+        <h6 class="footer-title text-gray-500 opacity-100">Quick Links</h6>
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">Products</a>
+        <a class="link link-hover">About</a>
+        <a class="link link-hover">Contact</a>
+      </nav>
+
+      <nav>
+        <h6 class="footer-title text-gray-500 opacity-100">Support</h6>
+        <a class="link link-hover">FAQ</a>
+        <a class="link link-hover">Shipping</a>
+        <a class="link link-hover">Returns</a>
+        <a class="link link-hover">Privacy Policy</a>
+      </nav>
+
+      <form class="sm:flex flex-col">
+        <h6 class="footer-title text-gray-500 opacity-100">
+          Subscribe to our newsletter
+        </h6>
+        <fieldset class="form-control w-80">
+          <label class="label">
+            <span class="label-text text-gray-400 text-sm"
+              >The latest news, articles, and resources, sent to your inbox
+              weekly.</span
+            >
+          </label>
+          <div class="flex gap-3 mt-2">
+            <input
+              type="text"
+              placeholder="Enter your email"
+              class="input input-bordered bg-white text-gray-900 w-full"
+            />
+            <button
+              class="btn bg-indigo-600 hover:bg-indigo-700 text-white border-none"
+            >
+              Subscribe
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
